@@ -1,0 +1,166 @@
+@import "utils/breakpoint";
+
+
+/* ====== Setup ======================================================================== */
+
+/* colors */
+$black: #333;
+$white: #FFF;
+$border-card-color: #ED002A;
+
+
+
+/* ====== Global ======================================================================= */
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a,
+a:focus,
+a:active,
+a:visited {
+    color: $black;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: $white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/* ====== Common includes ============================================================== */
+.logo{
+  width: 250px;
+  margin: 20px 0px;
+}
+
+.description{
+  background-color: rgba(0,0,0,0.7);
+  color: $white;
+  height: 50px;
+  border-bottom: 3px solid $border-card-color;
+  line-height: 50px;
+  padding-left: 20px;
+  display: inline;
+  position: absolute;
+  margin-left: -394px;
+  width: 350px;
+  margin-top: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#box {
+  height:auto;
+	overflow: hidden;
+	top:0px;
+	left:0px;
+	width: 100%;
+  margin:0px auto;
+  position: relative;
+}
+
+.box1{
+	width: 49%;
+	margin:10px auto;
+  vertical-align:top;
+  display:inline-block;
+	position: relative;
+  @include breakpoint(small) {
+    width: 15%;
+  }
+}
+
+.box2{
+	width: 49%;
+	margin:10px auto;
+  vertical-align:top;
+  display:inline-block;
+	position: relative;
+  @include breakpoint(small) {
+    width: 88%;
+  }
+}
+
+.details{
+  margin: 10px;
+}
+
+.details > p > span {
+  font-weight: bold;
+}
+
+.btn-home{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  background-color: $border-card-color;
+  border-radius: 3px;
+  text-align: center;
+  width: 200px;
+  height: 26px;
+  cursor: pointer;;
+}
+
+.btn-home:hover{
+    background-color: rgb(140, 15, 37);
+
+}
+
+.box-details {
+  border: 2px solid $border-card-color;
+  border-radius: 10px;
+  @include breakpoint(small) {
+      border: none;
+    }
+}
+
+.character li {
+  display: inline;
+  white-space: nowrap
+}
+
+.character{
+  display: inline;
+}
+
+.character:first-child > li > a > img{
+  margin-left: -50px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+
+  @include breakpoint(small) {
+    margin-left: 70px;
+  }
+}
+
+.character > li > a > img{
+  margin-left: -50px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+
+  @include breakpoint(small) {
+    margin-left: 106px;
+  }
+}

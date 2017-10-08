@@ -1,0 +1,20 @@
+{
+  "name": "Appli_Marvel",
+  "version": "0.0.0",
+  "authors": [
+    "Florence MOLINIE <florence.molinie@hotmail.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.9",
+    "angular-ui-router": "~1.0.3",
+    "bootstrap": "~3.3.7"
+  }
+}

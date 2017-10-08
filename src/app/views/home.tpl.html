@@ -1,0 +1,12 @@
+<div class="row">
+  <div >
+    <img class="logo" src="./src/app/assets/logo.png" alt="logo" />
+  </div>
+  <div >
+    <ul class="character" ng-repeat="character in characters">
+      <li><a><img ng-src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="character" width="350" height="300" class="imgCharacter"/></a></li>
+        <p class="description" ng-click="seeDetail(character.id)">{{ character.name }}</p>
+    </ul>
+  </div>
+  <div class="btn-home" ng-click="add()">Afficher les 10 suivants</div>
+</div>

@@ -1,0 +1,25 @@
+<div id="box">
+  <div class="box1">
+   <div>
+     <img ng-src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="" width="400" height="400"/>
+   </div>
+  </div>
+  <div class="box2 box-details">
+   <div class="details" >
+     <p><span>Nom:</span> {{character.name}}</p>
+     <p ng-if="character.description"><span>Description:</span> {{character.description}}</p>
+     <p ng-if="!character.description"><span>Description:</span> Pas de description</p>
+
+     <p><span>Nombre de comics:</span> {{countComics}}</p>
+     <p><span>3 premiers comics où {{character.name}} apparait:</span></p>
+     <ul>
+       <li ng-repeat="comic in comics">{{comic}}</li>
+     </ul>
+   </div>
+   <br>
+   <div ui-sref="home" class="btn-home">
+     Revenir à la page d'accueil
+   </div>
+   <br>
+  </div>
+</div>
